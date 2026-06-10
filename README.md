@@ -19,7 +19,7 @@
 ## 🚀 Featured Projects
 
 <p align="center">
-  <a href="https://github.com/Genesfi/expression-bank"><img src="https://github-readme-stats.vercel.app/api/pin/?username=Genesfi&repo=expression-bank&theme=tokyonight" /></a>
+  <a href="https://github.com/Genesfi/expression-bank"><img src="https://github-readme-stats.vercel.app/api/pin/?username=Genesfi&repo=expression-bank&theme=tokyonight&cache1" /></a>
   <a href="https://github.com/Genesfi/yt-music-vinyl"><img src="https://github-readme-stats.vercel.app/api/pin/?username=Genesfi&repo=yt-music-vinyl&theme=tokyonight" /></a>
 </p>
 
