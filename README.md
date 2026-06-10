@@ -22,7 +22,7 @@ Portfolio: https://migi-portfolio.vercel.app
 
 ## 🛠 Tech Stack
 
-![After Effects](https://img.shields.io/badge/AE-9999FF?style=for-the-badge)
+![After Effects](https://img.shields.io/badge/After_Effect-9999FF?style=for-the-badge)
 ![C++](https://img.shields.io/badge/C++-00599C?style=for-the-badge)
 ![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge)
 ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge)
