@@ -66,4 +66,4 @@ https://github.com/Genesfi/yt-music-vinyl
 
 ![Stats](https://github-readme-stats.vercel.app/api?username=Genesfi&show_icons=true&theme=tokyonight)
 
-![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=Genesfi&layout=compact&theme=tokyonight)
+![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=Genesfi&layout=compact&theme=tokyonight&hide_border=true)
