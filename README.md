@@ -1,6 +1,6 @@
 <div align="center">
 
-# Gusti N. (Genesfi)
+# Gustian (Genesfi)
 
 ### Motion Designer • After Effects Scripter • AEX Plugin Developer
 
