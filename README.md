@@ -2,11 +2,11 @@
 
 # Gustian (Genesfi)
 
-[![Typing SVG](https://readme-typing-svg.herokuapp.com?size=22&duration=3000&center=true&vCenter=true&lines=Motion+Designer;After+Effects+Scripter;AEX+Plugin+Developer;Python+Automation)]()
+[![Typing SVG](https://readme-typing-svg.herokuapp.com?size=24&duration=3000&center=true&vCenter=true&lines=Motion+Designer;After+Effects+Scripter;AEX+Plugin+Developer;Python+Automation)]()
 
-🔗 [Portfolio](https://migi-portfolio.vercel.app) •
-⚡ [Expression Bank](https://github.com/Genesfi/expression-bank) •
-🎵 [YT Music Vinyl](https://github.com/Genesfi/yt-music-vinyl)
+### Building tools, scripts, and plugins for Adobe After Effects
+
+🔗 Portfolio • https://migi-portfolio.vercel.app
 
 <br>
 
@@ -16,10 +16,37 @@
 ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=flat-square)
 ![Laravel](https://img.shields.io/badge/Laravel-FF2D20?style=flat-square)
 
-<br>
+</div>
 
-<img height="165" src="https://github-readme-stats.vercel.app/api?username=Genesfi&show_icons=true&theme=tokyonight"/>
+---
 
-<img src="https://github-readme-activity-graph.vercel.app/graph?username=Genesfi&theme=tokyo-night"/>
+## 🚀 Featured Projects
+
+<a href="https://github.com/Genesfi/expression-bank">
+  <img src="https://github-readme-stats.vercel.app/api/pin/?username=Genesfi&repo=expression-bank&theme=tokyonight" />
+</a>
+
+<a href="https://github.com/Genesfi/yt-music-vinyl">
+  <img src="https://github-readme-stats.vercel.app/api/pin/?username=Genesfi&repo=yt-music-vinyl&theme=tokyonight" />
+</a>
+
+---
+
+## 📊 GitHub Statistics
+
+<p align="center">
+  <img height="170" src="https://github-readme-stats.vercel.app/api?username=Genesfi&show_icons=true&theme=tokyonight&hide_border=true" />
+  <img height="170" src="https://github-readme-stats.vercel.app/api/top-langs/?username=Genesfi&layout=compact&theme=tokyonight&hide_border=true" />
+</p>
+
+<p align="center">
+  <img height="170" src="https://github-readme-streak-stats.herokuapp.com/?user=Genesfi&theme=tokyonight&hide_border=true" />
+</p>
+
+---
+
+<div align="center">
+
+![](https://komarev.com/ghpvc/?username=Genesfi&style=flat-square)
 
 </div>
