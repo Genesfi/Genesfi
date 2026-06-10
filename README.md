@@ -10,11 +10,7 @@
 
 <br>
 
-![After Effects](https://img.shields.io/badge/After_Effects-9999FF?style=flat-square)
-![C++](https://img.shields.io/badge/C++-00599C?style=flat-square)
-![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square)
-![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=flat-square)
-![Laravel](https://img.shields.io/badge/Laravel-FF2D20?style=flat-square)
+![After Effects](https://img.shields.io/badge/After_Effects-9999FF?style=flat-square) ![C++](https://img.shields.io/badge/C++-00599C?style=flat-square) ![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square) ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=flat-square) ![Laravel](https://img.shields.io/badge/Laravel-FF2D20?style=flat-square)
 
 </div>
 
@@ -22,13 +18,10 @@
 
 ## 🚀 Featured Projects
 
-<a href="https://github.com/Genesfi/expression-bank">
-  <img src="https://github-readme-stats.vercel.app/api/pin/?username=Genesfi&repo=expression-bank&theme=tokyonight&cache=1" />
-</a>
-
-<a href="https://github.com/Genesfi/yt-music-vinyl">
-  <img src="https://github-readme-stats.vercel.app/api/pin/?username=Genesfi&repo=yt-music-vinyl&theme=tokyonight" />
-</a>
+<p align="center">
+  <a href="https://github.com/Genesfi/expression-bank"><img src="https://github-readme-stats.vercel.app/api/pin/?username=Genesfi&repo=expression-bank&theme=tokyonight" /></a>
+  <a href="https://github.com/Genesfi/yt-music-vinyl"><img src="https://github-readme-stats.vercel.app/api/pin/?username=Genesfi&repo=yt-music-vinyl&theme=tokyonight" /></a>
+</p>
 
 ---
 
