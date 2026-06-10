@@ -1,9 +1,6 @@
 <img src="https://raw.githubusercontent.com/Genesfi/Genesfi/main/header.svg" width="100%" alt="Blueprint Title Block">
 
 <div align="center">
-
-# Gustian (Genesfi)
-
 [![Typing SVG](https://readme-typing-svg.herokuapp.com?size=24&duration=3000&center=true&vCenter=true&lines=Motion+Designer;After+Effects+Scripter;AEX+Plugin+Developer;Python+Automation)]()
 
 ### Building tools, scripts, and plugins for Adobe After Effects
