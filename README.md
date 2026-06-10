@@ -1,35 +1,23 @@
-<div align="center">
+<table>
+<tr>
+<td width="55%">
 
-# Gustian (Genesfi)
+### 👋 About Me
 
-### 🎬 Motion Designer • ⚡ AE Scripter • 🔌 AEX Plugin Developer
+- 🎬 Motion Designer
+- ⚡ After Effects Scripter
+- 🔌 AEX Plugin Developer
+- 🐍 Python Automation
 
-Portfolio: https://migi-portfolio.vercel.app
+Portfolio:
+https://migi-portfolio.vercel.app
 
-</div>
+</td>
 
----
+<td width="45%">
 
-## 🚀 Featured Projects
+<img src="https://github-readme-stats.vercel.app/api?username=Genesfi&show_icons=true&theme=tokyonight"/>
 
-| Project | Description |
-|----------|----------|
-| 🎬 Portfolio | https://migi-portfolio.vercel.app |
-| ⚡ Expression Bank | https://github.com/Genesfi/expression-bank |
-| 🎵 YT Music Vinyl | https://github.com/Genesfi/yt-music-vinyl |
-
----
-
-## 🛠 Tech Stack
-
-![After Effects](https://img.shields.io/badge/AE-9999FF?style=for-the-badge)
-![C++](https://img.shields.io/badge/C++-00599C?style=for-the-badge)
-![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge)
-![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge)
-![Laravel](https://img.shields.io/badge/Laravel-FF2D20?style=for-the-badge)
-
----
-
-## 📊 GitHub Stats
-
-<img height="170" src="https://github-readme-stats.vercel.app/api?username=Genesfi&show_icons=true&theme=tokyonight"/>
+</td>
+</tr>
+</table>
