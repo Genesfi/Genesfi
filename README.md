@@ -1,7 +1,7 @@
 <div align="center">
 
 # Gustian (Genesfi)
-
+[![Typing SVG](https://readme-typing-svg.herokuapp.com?size=25&duration=3000&center=true&vCenter=true&lines=Motion+Designer;After+Effects+Scripter;AEX+Plugin+Developer;Python+Automation)]()
 ### 🎬 Motion Designer • ⚡ AE Scripter • 🔌 AEX Plugin Developer
 
 Portfolio: https://migi-portfolio.vercel.app
