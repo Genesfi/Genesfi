@@ -1,4 +1,4 @@
-<img src="https://raw.githubusercontent.com/Genesfi/Genesfi/main/header.svg" width="100%" alt="Sleek Hero">
+<img src="https://raw.githubusercontent.com/Genesfi/Genesfi/main/header.svg&cache1" width="100%" alt="Sleek Hero">
 
 <br/>
 
