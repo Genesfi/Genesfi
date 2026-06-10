@@ -1,16 +1,23 @@
-## Hi there 👋
+# Hi 👋 I'm Gusti
 
-<!--
-**Genesfi/Genesfi** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+🎬 Motion Graphics Designer
 
-Here are some ideas to get you started:
+⚡ After Effects Scripter
 
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+🐍 Python Automation
+
+🎵 Music Video Editor
+
+## Tools
+
+![After Effects](https://img.shields.io/badge/After_Effects-9999FF?style=for-the-badge&logo=adobeaftereffects&logoColor=white)
+
+![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
+
+![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
+
+## GitHub Stats
+
+![Stats](https://github-readme-stats.vercel.app/api?username=Genesfi&show_icons=true&theme=tokyonight)
+
+![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=Genesfi&layout=compact&theme=tokyonight)
