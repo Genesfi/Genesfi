@@ -1,163 +1,121 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="800" height="320" viewBox="0 0 800 320">
   <style>
-    .live { animation: livePulse 12s ease-in-out infinite; transform-box: fill-box; transform-origin: center; }
+    .heading { animation: slidein 12s ease-out infinite; }
+    .underline { animation: bar 12s ease-out infinite; transform-origin: left center; }
+    .meta { animation: fade 12s ease-in-out infinite; }
+    .corner { animation: cornerSlide 12s ease-out infinite; }
+    .stat { animation: fadeUp 12s ease-out infinite; }
+    .s0 { animation-delay: 0.3s }
+    .s1 { animation-delay: 0.4s }
+    .s2 { animation-delay: 0.5s }
+    .s3 { animation-delay: 0.6000000000000001s }
+    .lang-bar { animation: bar 12s ease-out infinite; transform-origin: left center; }
 
-    @keyframes livePulse {
-      0%, 60%, 100% { opacity: 0.85; }
-      70% { opacity: 0.25; }
+    @keyframes slidein {
+      0% { opacity: 0; transform: translateX(-12px) }
+      8% { opacity: 1; transform: translateX(0) }
+      90% { opacity: 1; transform: translateX(0) }
+      100% { opacity: 0; transform: translateX(0) }
+    }
+    @keyframes bar {
+      0%, 14% { transform: scaleX(0) }
+      24%, 88% { transform: scaleX(1) }
+      100% { transform: scaleX(1) }
+    }
+    @keyframes fade {
+      0%, 22% { opacity: 0 }
+      32%, 90% { opacity: 1 }
+      100% { opacity: 0 }
+    }
+    @keyframes fadeUp {
+      0%, 22% { opacity: 0; transform: translateY(8px) }
+      36%, 90% { opacity: 1; transform: translateY(0) }
+      100% { opacity: 0; transform: translateY(0) }
+    }
+    @keyframes cornerSlide {
+      0%, 8% { opacity: 0; transform: translateX(-8px) }
+      18%, 90% { opacity: 0.6; transform: translateX(0) }
+      100% { opacity: 0; transform: translateX(0) }
     }
   </style>
   <defs>
-    <linearGradient id="bp-paper-stats" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0%" stop-color="#0e3a6e" stop-opacity="0.94"/>
-      <stop offset="100%" stop-color="#0e3a6e" stop-opacity="1"/>
+    <linearGradient id="sleek-stats-bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0d0d10"/>
+      <stop offset="100%" stop-color="#0d0d10" stop-opacity="0.85"/>
     </linearGradient>
-    <pattern id="bp-grid-stats" x="24" y="24" width="20" height="20" patternUnits="userSpaceOnUse">
-      <path d="M 20 0 L 0 0 0 20" fill="none" stroke="#7d9fc4" stroke-width="0.5" stroke-opacity="0.22"/>
-    </pattern>
-    <pattern id="bp-grid-major-stats" x="24" y="24" width="100" height="100" patternUnits="userSpaceOnUse">
-      <path d="M 100 0 L 0 0 0 100" fill="none" stroke="#7d9fc4" stroke-width="0.75" stroke-opacity="0.32"/>
-    </pattern>
   </defs>
+  <rect width="100%" height="100%" fill="url(#sleek-stats-bg)" rx="14" ry="14"/>
 
-  <rect width="100%" height="100%" fill="url(#bp-paper-stats)" rx="4" ry="4"/>
-
-  <!-- Grid -->
-  <rect x="24" y="24" width="752" height="272" fill="url(#bp-grid-stats)"/>
-  <rect x="24" y="24" width="752" height="272" fill="url(#bp-grid-major-stats)"/>
-
-  <!-- Sheet border + corner registration marks -->
-  <rect x="24" y="24" width="752" height="272" fill="none" stroke="#f1ece1" stroke-width="1" stroke-opacity="0.7"/>
-  <g>
-    <line x1="19" y1="24" x2="29" y2="24" stroke="#f1ece1" stroke-width="1"/>
-    <line x1="24" y1="19" x2="24" y2="29" stroke="#f1ece1" stroke-width="1"/>
+  <!-- corner decorations (mirrors sleek-header) -->
+  <g class="corner" opacity="0.6">
+    <rect x="40" y="42" width="22" height="2" fill="#2cdd59"/>
+    <rect x="40" y="42" width="2" height="22" fill="#2cdd59"/>
   </g>
-  <g>
-    <line x1="771" y1="24" x2="781" y2="24" stroke="#f1ece1" stroke-width="1"/>
-    <line x1="776" y1="19" x2="776" y2="29" stroke="#f1ece1" stroke-width="1"/>
-  </g>
-  <g>
-    <line x1="19" y1="296" x2="29" y2="296" stroke="#f1ece1" stroke-width="1"/>
-    <line x1="24" y1="291" x2="24" y2="301" stroke="#f1ece1" stroke-width="1"/>
-  </g>
-  <g>
-    <line x1="771" y1="296" x2="781" y2="296" stroke="#f1ece1" stroke-width="1"/>
-    <line x1="776" y1="291" x2="776" y2="301" stroke="#f1ece1" stroke-width="1"/>
-  </g>
-
-  <!-- Top strip -->
-  <text x="36" y="40" fill="#7d9fc4" font-family="ui-monospace, monospace" font-size="10" letter-spacing="2">FIG. 04    GITHUB ACTIVITY  ·  @GENESFI</text>
-  <g transform="translate(764 36)">
-    <text text-anchor="end" fill="#7d9fc4" font-family="ui-monospace, monospace" font-size="10" letter-spacing="2">SHEET 04 / 05</text>
-    <circle class="live" cx="6" cy="-3" r="2" fill="#ffffff" opacity="0.85"/>
-  </g>
-  <line x1="32" y1="48" x2="768" y2="48" stroke="#7d9fc4" stroke-width="0.75" stroke-opacity="0.4"/>
-
-  <!-- ACTIVITY panel -->
-  <g>
-    <rect x="36" y="64" width="432" height="176" fill="none" stroke="#f1ece1" stroke-width="1" stroke-opacity="0.7"/>
-    <rect x="48" y="57" width="74" height="14" fill="#0e3a6e" stroke="#f1ece1" stroke-width="1" stroke-opacity="0.7"/>
-    <text x="85" y="67" text-anchor="middle" fill="#7d9fc4" font-family="ui-monospace, monospace" font-size="9" letter-spacing="1.4">ACTIVITY</text>
-    <g>
-      <text x="52" y="90" fill="#7d9fc4" font-family="ui-monospace, monospace" font-size="10" letter-spacing="1.4">REPOS</text>
-      <text x="148" y="90" text-anchor="end" fill="#f1ece1" font-family="ui-monospace, monospace" font-size="13" font-weight="700" letter-spacing="0.5">14</text>
-      <text x="420" y="90" text-anchor="end" fill="#7d9fc4" font-family="ui-monospace, monospace" font-size="9" letter-spacing="1.2" opacity="0.8">10 INDEXED</text>
-      <line x1="52" y1="96" x2="436" y2="96" stroke="#7d9fc4" stroke-width="0.5" stroke-opacity="0.4"/>
-    </g>
-  <g>
-      <text x="52" y="112" fill="#7d9fc4" font-family="ui-monospace, monospace" font-size="10" letter-spacing="1.4">COMMITS</text>
-      <text x="148" y="112" text-anchor="end" fill="#f1ece1" font-family="ui-monospace, monospace" font-size="13" font-weight="700" letter-spacing="0.5">232</text>
-      <text x="420" y="112" text-anchor="end" fill="#7d9fc4" font-family="ui-monospace, monospace" font-size="9" letter-spacing="1.2" opacity="0.8">THIS YEAR</text>
-      <line x1="52" y1="118" x2="436" y2="118" stroke="#7d9fc4" stroke-width="0.5" stroke-opacity="0.4"/>
-    </g>
-  <g>
-      <text x="52" y="134" fill="#7d9fc4" font-family="ui-monospace, monospace" font-size="10" letter-spacing="1.4">PRS</text>
-      <text x="148" y="134" text-anchor="end" fill="#f1ece1" font-family="ui-monospace, monospace" font-size="13" font-weight="700" letter-spacing="0.5">0</text>
-      <text x="420" y="134" text-anchor="end" fill="#7d9fc4" font-family="ui-monospace, monospace" font-size="9" letter-spacing="1.2" opacity="0.8">0 THIS YEAR</text>
-      <line x1="52" y1="140" x2="436" y2="140" stroke="#7d9fc4" stroke-width="0.5" stroke-opacity="0.4"/>
-    </g>
-  <g>
-      <text x="52" y="156" fill="#7d9fc4" font-family="ui-monospace, monospace" font-size="10" letter-spacing="1.4">REVIEWS</text>
-      <text x="148" y="156" text-anchor="end" fill="#f1ece1" font-family="ui-monospace, monospace" font-size="13" font-weight="700" letter-spacing="0.5">0</text>
-      <text x="420" y="156" text-anchor="end" fill="#7d9fc4" font-family="ui-monospace, monospace" font-size="9" letter-spacing="1.2" opacity="0.8">THIS YEAR</text>
-      
-    </g>
-    <text x="52" y="204" fill="#7d9fc4" font-family="ui-monospace, monospace" font-size="9" letter-spacing="1.4">TOTAL CONTRIBS  ·  240</text>
-    <rect x="52" y="210" width="29.666666666666668" height="6" rx="1" fill="#ffffff" fill-opacity="0.85"/>
-  <rect x="85.66666666666667" y="210" width="29.666666666666668" height="6" rx="1" fill="#ffffff" fill-opacity="0.85"/>
-  <rect x="119.33333333333334" y="210" width="29.666666666666668" height="6" rx="1" fill="#7d9fc4" fill-opacity="0.18"/>
-  <rect x="153" y="210" width="29.666666666666668" height="6" rx="1" fill="#7d9fc4" fill-opacity="0.18"/>
-  <rect x="186.66666666666669" y="210" width="29.666666666666668" height="6" rx="1" fill="#7d9fc4" fill-opacity="0.18"/>
-  <rect x="220.33333333333337" y="210" width="29.666666666666668" height="6" rx="1" fill="#7d9fc4" fill-opacity="0.18"/>
-  <rect x="254.00000000000003" y="210" width="29.666666666666668" height="6" rx="1" fill="#7d9fc4" fill-opacity="0.18"/>
-  <rect x="287.6666666666667" y="210" width="29.666666666666668" height="6" rx="1" fill="#7d9fc4" fill-opacity="0.18"/>
-  <rect x="321.33333333333337" y="210" width="29.666666666666668" height="6" rx="1" fill="#7d9fc4" fill-opacity="0.18"/>
-  <rect x="355.00000000000006" y="210" width="29.666666666666668" height="6" rx="1" fill="#7d9fc4" fill-opacity="0.18"/>
-  <rect x="388.66666666666674" y="210" width="29.666666666666668" height="6" rx="1" fill="#7d9fc4" fill-opacity="0.18"/>
-  <rect x="422.33333333333337" y="210" width="29.666666666666668" height="6" rx="1" fill="#7d9fc4" fill-opacity="0.18"/>
-  </g>
-
-  <!-- MATERIALS panel -->
-  <g>
-    <rect x="492" y="64" width="272" height="176" fill="none" stroke="#f1ece1" stroke-width="1" stroke-opacity="0.7"/>
-    <rect x="504" y="57" width="81" height="14" fill="#0e3a6e" stroke="#f1ece1" stroke-width="1" stroke-opacity="0.7"/>
-    <text x="544.5" y="67" text-anchor="middle" fill="#7d9fc4" font-family="ui-monospace, monospace" font-size="9" letter-spacing="1.4">MATERIALS</text>
-    <g>
-      <rect x="504" y="82" width="10" height="10" fill="#f1e05a"/>
-      <text x="522" y="90" fill="#f1ece1" font-family="ui-monospace, monospace" font-size="11" letter-spacing="0.8">JAVASCRIPT</text>
-      <text x="752" y="90" text-anchor="end" fill="#f1ece1" font-family="ui-monospace, monospace" font-size="11" letter-spacing="0.8">30.0%</text>
-      <line x1="504" y1="98" x2="752" y2="98" stroke="#7d9fc4" stroke-width="0.5" stroke-opacity="0.4"/>
-    </g>
-  <g>
-      <rect x="504" y="106" width="10" height="10" fill="#f7523f"/>
-      <text x="522" y="114" fill="#f1ece1" font-family="ui-monospace, monospace" font-size="11" letter-spacing="0.8">BLADE</text>
-      <text x="752" y="114" text-anchor="end" fill="#f1ece1" font-family="ui-monospace, monospace" font-size="11" letter-spacing="0.8">18.7%</text>
-      <line x1="504" y1="122" x2="752" y2="122" stroke="#7d9fc4" stroke-width="0.5" stroke-opacity="0.4"/>
-    </g>
-  <g>
-      <rect x="504" y="130" width="10" height="10" fill="#3178c6"/>
-      <text x="522" y="138" fill="#f1ece1" font-family="ui-monospace, monospace" font-size="11" letter-spacing="0.8">TYPESCRIPT</text>
-      <text x="752" y="138" text-anchor="end" fill="#f1ece1" font-family="ui-monospace, monospace" font-size="11" letter-spacing="0.8">18.3%</text>
-      <line x1="504" y1="146" x2="752" y2="146" stroke="#7d9fc4" stroke-width="0.5" stroke-opacity="0.4"/>
-    </g>
-  <g>
-      <rect x="504" y="154" width="10" height="10" fill="#e34c26"/>
-      <text x="522" y="162" fill="#f1ece1" font-family="ui-monospace, monospace" font-size="11" letter-spacing="0.8">HTML</text>
-      <text x="752" y="162" text-anchor="end" fill="#f1ece1" font-family="ui-monospace, monospace" font-size="11" letter-spacing="0.8">13.0%</text>
-      <line x1="504" y1="170" x2="752" y2="170" stroke="#7d9fc4" stroke-width="0.5" stroke-opacity="0.4"/>
-    </g>
-  <g>
-      <rect x="504" y="178" width="10" height="10" fill="#4F5D95"/>
-      <text x="522" y="186" fill="#f1ece1" font-family="ui-monospace, monospace" font-size="11" letter-spacing="0.8">PHP</text>
-      <text x="752" y="186" text-anchor="end" fill="#f1ece1" font-family="ui-monospace, monospace" font-size="11" letter-spacing="0.8">12.0%</text>
-      
+  <g transform="translate(800 0) scale(-1 1)">
+    <g class="corner" opacity="0.6">
+      <rect x="40" y="42" width="22" height="2" fill="#2cdd59"/>
+      <rect x="40" y="42" width="2" height="22" fill="#2cdd59"/>
     </g>
   </g>
 
-  <!-- Title block -->
+  <!-- heading + accent underline -->
+  <text class="heading" x="48" y="84" fill="#f7f7fb" font-family='"Inter", system-ui, sans-serif' font-size="36" font-weight="700" letter-spacing="-1.2">Activity.</text>
+  <rect class="underline" x="48" y="96" width="181" height="2" fill="#2cdd59" rx="1"/>
+
+  <!-- meta line -->
+  <text class="meta" x="48" y="120" fill="#a5a5b3" font-family="ui-monospace, monospace" font-size="11" letter-spacing="2">@GENESFI   ·   240 CONTRIBUTIONS   ·   GRAPHQL</text>
+
+  <!-- stat blocks -->
+  <g transform="translate(48 156)">
+      <g class="stat s0">
+        <text x="0" y="0" fill="#a5a5b3" font-family="ui-monospace, monospace" font-size="10" letter-spacing="2">REPOS</text>
+        <text x="0" y="38" fill="#f7f7fb" font-family='"Inter", system-ui, sans-serif' font-size="34" font-weight="700" letter-spacing="-1">14</text>
+        <text x="0" y="60" fill="#a5a5b3" font-family='"Inter", system-ui, sans-serif' font-size="11" font-weight="400">10 indexed</text>
+      </g>
+    </g>
+  <g transform="translate(230 156)">
+      <g class="stat s1">
+        <text x="0" y="0" fill="#a5a5b3" font-family="ui-monospace, monospace" font-size="10" letter-spacing="2">COMMITS</text>
+        <text x="0" y="38" fill="#f7f7fb" font-family='"Inter", system-ui, sans-serif' font-size="34" font-weight="700" letter-spacing="-1">232</text>
+        <text x="0" y="60" fill="#a5a5b3" font-family='"Inter", system-ui, sans-serif' font-size="11" font-weight="400">this year</text>
+      </g>
+    </g>
+  <g transform="translate(412 156)">
+      <g class="stat s2">
+        <text x="0" y="0" fill="#a5a5b3" font-family="ui-monospace, monospace" font-size="10" letter-spacing="2">PRS</text>
+        <text x="0" y="38" fill="#f7f7fb" font-family='"Inter", system-ui, sans-serif' font-size="34" font-weight="700" letter-spacing="-1">0</text>
+        <text x="0" y="60" fill="#a5a5b3" font-family='"Inter", system-ui, sans-serif' font-size="11" font-weight="400">0 this year</text>
+      </g>
+    </g>
+  <g transform="translate(594 156)">
+      <g class="stat s3">
+        <text x="0" y="0" fill="#a5a5b3" font-family="ui-monospace, monospace" font-size="10" letter-spacing="2">REVIEWS</text>
+        <text x="0" y="38" fill="#f7f7fb" font-family='"Inter", system-ui, sans-serif' font-size="34" font-weight="700" letter-spacing="-1">0</text>
+        <text x="0" y="60" fill="#a5a5b3" font-family='"Inter", system-ui, sans-serif' font-size="11" font-weight="400">this year</text>
+      </g>
+    </g>
+
+  <!-- language strip -->
+  <rect x="48" y="254" width="704" height="6" rx="3" fill="#a5a5b3" fill-opacity="0.2"/>
+  <g class="lang-bar"><rect x="48" y="254" width="211.2" height="6" rx="3" fill="#f1e05a"/>
+  <rect x="259.2" y="254" width="131.648" height="6" rx="3" fill="#f7523f"/>
+  <rect x="390.84799999999996" y="254" width="128.832" height="6" rx="3" fill="#3178c6"/>
+  <rect x="519.68" y="254" width="91.52" height="6" rx="3" fill="#e34c26"/>
+  <rect x="611.1999999999999" y="254" width="140.80000000000007" height="6" rx="3" fill="#4F5D95"/></g>
   <g>
-    <rect x="24" y="252" width="150" height="44" fill="none" stroke="#7d9fc4" stroke-width="1" stroke-opacity="0.55"/>
-    <text x="32" y="264" fill="#7d9fc4" font-family="ui-monospace, monospace" font-size="8" letter-spacing="1.2">DRAWN BY</text>
-    <text x="32" y="288" fill="#f1ece1" font-family="ui-monospace, monospace" font-size="11" letter-spacing="1">GE</text>
-  </g>
+        <rect x="48" y="279" width="8" height="8" rx="2" fill="#f1e05a"/>
+        <text x="64" y="286" fill="#a5a5b3" font-family="ui-monospace, monospace" font-size="10" letter-spacing="1.4">JAVASCRIPT  30%</text>
+      </g>
   <g>
-    <rect x="174" y="252" width="150" height="44" fill="none" stroke="#7d9fc4" stroke-width="1" stroke-opacity="0.55"/>
-    <text x="182" y="264" fill="#7d9fc4" font-family="ui-monospace, monospace" font-size="8" letter-spacing="1.2">DATE</text>
-    <text x="182" y="288" fill="#f1ece1" font-family="ui-monospace, monospace" font-size="11" letter-spacing="1">26.10</text>
-  </g>
+        <rect x="224" y="279" width="8" height="8" rx="2" fill="#f7523f"/>
+        <text x="240" y="286" fill="#a5a5b3" font-family="ui-monospace, monospace" font-size="10" letter-spacing="1.4">BLADE  19%</text>
+      </g>
   <g>
-    <rect x="324" y="252" width="150" height="44" fill="none" stroke="#7d9fc4" stroke-width="1" stroke-opacity="0.55"/>
-    <text x="332" y="264" fill="#7d9fc4" font-family="ui-monospace, monospace" font-size="8" letter-spacing="1.2">SCALE</text>
-    <text x="332" y="288" fill="#f1ece1" font-family="ui-monospace, monospace" font-size="11" letter-spacing="1">1:1</text>
-  </g>
+        <rect x="400" y="279" width="8" height="8" rx="2" fill="#3178c6"/>
+        <text x="416" y="286" fill="#a5a5b3" font-family="ui-monospace, monospace" font-size="10" letter-spacing="1.4">TYPESCRIPT  18%</text>
+      </g>
   <g>
-    <rect x="474" y="252" width="150" height="44" fill="none" stroke="#7d9fc4" stroke-width="1" stroke-opacity="0.55"/>
-    <text x="482" y="264" fill="#7d9fc4" font-family="ui-monospace, monospace" font-size="8" letter-spacing="1.2">REV</text>
-    <text x="482" y="288" fill="#f1ece1" font-family="ui-monospace, monospace" font-size="11" letter-spacing="1">1.0</text>
-  </g>
-  <g>
-    <rect x="624" y="252" width="152" height="44" fill="none" stroke="#7d9fc4" stroke-width="1" stroke-opacity="0.55"/>
-    <text x="632" y="264" fill="#7d9fc4" font-family="ui-monospace, monospace" font-size="8" letter-spacing="1.2">SHEET</text>
-    <text x="632" y="288" fill="#f1ece1" font-family="ui-monospace, monospace" font-size="11" letter-spacing="1">04 / 05</text>
-  </g>
+        <rect x="576" y="279" width="8" height="8" rx="2" fill="#e34c26"/>
+        <text x="592" y="286" fill="#a5a5b3" font-family="ui-monospace, monospace" font-size="10" letter-spacing="1.4">HTML  13%</text>
+      </g>
 </svg>

@@ -1,146 +1,50 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="800" height="300" viewBox="0 0 800 300">
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="320" viewBox="0 0 800 320">
   <style>
-    .live { animation: livePulse 12s ease-in-out infinite; transform-box: fill-box; transform-origin: center; }
-    .scribe { stroke-dasharray: 240; stroke-dashoffset: 240; animation: scribeDraw 12s ease-out infinite; }
+    .heading { animation: slidein 12s ease-out infinite; }
+    .bio { animation: fade 12s ease-in-out infinite; }
+    .pill { animation: pillpop 12s ease-out infinite; transform-box: fill-box; transform-origin: center; }
+    .p0 { animation-delay: 0.4s }
+    .accentbar { animation: bar 12s ease-out infinite; transform-origin: top left; }
 
-    @keyframes livePulse {
-      0%, 60%, 100% { opacity: 0.85; }
-      70% { opacity: 0.25; }
+    @keyframes slidein {
+      0% { opacity: 0; transform: translateX(-12px) }
+      8% { opacity: 1; transform: translateX(0) }
+      90% { opacity: 1; transform: translateX(0) }
+      100% { opacity: 0; transform: translateX(0) }
     }
-    @keyframes scribeDraw {
-      0% { stroke-dashoffset: 240; }
-      32%, 88% { stroke-dashoffset: 0; }
-      100% { stroke-dashoffset: 240; }
+    @keyframes fade {
+      0%, 8% { opacity: 0 }
+      18% { opacity: 1 }
+      90% { opacity: 1 }
+      100% { opacity: 0 }
+    }
+    @keyframes pillpop {
+      0%, 14% { opacity: 0; transform: scale(0.85) }
+      22% { opacity: 1; transform: scale(1) }
+      90% { opacity: 1; transform: scale(1) }
+      100% { opacity: 0; transform: scale(1) }
+    }
+    @keyframes bar {
+      0% { transform: scaleY(0) }
+      10% { transform: scaleY(1) }
+      90% { transform: scaleY(1) }
+      100% { transform: scaleY(1) }
     }
   </style>
   <defs>
-    <linearGradient id="bp-paper-2" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0%" stop-color="#0e3a6e" stop-opacity="0.94"/>
-      <stop offset="100%" stop-color="#0e3a6e" stop-opacity="1"/>
+    <linearGradient id="card-grad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0d0d10"/>
+      <stop offset="100%" stop-color="#0d0d10" stop-opacity="0.85"/>
     </linearGradient>
-    <pattern id="bp-grid-2" x="24" y="24" width="20" height="20" patternUnits="userSpaceOnUse">
-      <path d="M 20 0 L 0 0 0 20" fill="none" stroke="#7d9fc4" stroke-width="0.5" stroke-opacity="0.22"/>
-    </pattern>
-    <pattern id="bp-grid-major-2" x="24" y="24" width="100" height="100" patternUnits="userSpaceOnUse">
-      <path d="M 100 0 L 0 0 0 100" fill="none" stroke="#7d9fc4" stroke-width="0.75" stroke-opacity="0.32"/>
-    </pattern>
   </defs>
-
-  <rect width="100%" height="100%" fill="url(#bp-paper-2)" rx="4" ry="4"/>
-
-  <!-- Grid -->
-  <rect x="24" y="24" width="752" height="252" fill="url(#bp-grid-2)"/>
-  <rect x="24" y="24" width="752" height="252" fill="url(#bp-grid-major-2)"/>
-
-  <!-- Sheet border + corner registration marks -->
-  <rect x="24" y="24" width="752" height="252" fill="none" stroke="#f1ece1" stroke-width="1" stroke-opacity="0.7"/>
-  <g>
-    <line x1="19" y1="24" x2="29" y2="24" stroke="#f1ece1" stroke-width="1"/>
-    <line x1="24" y1="19" x2="24" y2="29" stroke="#f1ece1" stroke-width="1"/>
-  </g>
-  <g>
-    <line x1="771" y1="24" x2="781" y2="24" stroke="#f1ece1" stroke-width="1"/>
-    <line x1="776" y1="19" x2="776" y2="29" stroke="#f1ece1" stroke-width="1"/>
-  </g>
-  <g>
-    <line x1="19" y1="276" x2="29" y2="276" stroke="#f1ece1" stroke-width="1"/>
-    <line x1="24" y1="271" x2="24" y2="281" stroke="#f1ece1" stroke-width="1"/>
-  </g>
-  <g>
-    <line x1="771" y1="276" x2="781" y2="276" stroke="#f1ece1" stroke-width="1"/>
-    <line x1="776" y1="271" x2="776" y2="281" stroke="#f1ece1" stroke-width="1"/>
-  </g>
-
-  <!-- Top strip -->
-  <text x="36" y="40" fill="#7d9fc4" font-family="ui-monospace, monospace" font-size="10" letter-spacing="2">FIG. 02    BIOGRAPHICAL DATA</text>
-  <g transform="translate(764 36)">
-    <text text-anchor="end" fill="#7d9fc4" font-family="ui-monospace, monospace" font-size="10" letter-spacing="2">SHEET 02 / 05</text>
-    <circle class="live" cx="6" cy="-3" r="2" fill="#ffffff" opacity="0.85"/>
-  </g>
-  <line x1="32" y1="48" x2="768" y2="48" stroke="#7d9fc4" stroke-width="0.75" stroke-opacity="0.4"/>
-
-  <!-- NOTES panel (bio) -->
-  <g>
-    <rect x="36" y="64" width="432" height="164" fill="none" stroke="#f1ece1" stroke-width="1" stroke-opacity="0.7"/>
-    <rect x="48" y="57" width="53" height="14" fill="#0e3a6e" stroke="#f1ece1" stroke-width="1" stroke-opacity="0.7"/>
-    <text x="74.5" y="67" text-anchor="middle" fill="#7d9fc4" font-family="ui-monospace, monospace" font-size="9" letter-spacing="1.4">NOTES</text>
-    <g>
-      <text x="52" y="92" fill="#7d9fc4" font-family="ui-monospace, monospace" font-size="10" letter-spacing="1">01</text>
-      <text x="80" y="92" fill="#f1ece1" font-family="ui-monospace, monospace" font-size="13" letter-spacing="0.5">I build things that turn LLM rollouts into</text>
-    </g>
-  <g>
-      <text x="52" y="114" fill="#7d9fc4" font-family="ui-monospace, monospace" font-size="10" letter-spacing="1">02</text>
-      <text x="80" y="114" fill="#f1ece1" font-family="ui-monospace, monospace" font-size="13" letter-spacing="0.5">accountable workflows. Lately: agent</text>
-    </g>
-  <g>
-      <text x="52" y="136" fill="#7d9fc4" font-family="ui-monospace, monospace" font-size="10" letter-spacing="1">03</text>
-      <text x="80" y="136" fill="#f1ece1" font-family="ui-monospace, monospace" font-size="13" letter-spacing="0.5">observability, replayable runs, and the kind</text>
-    </g>
-  <g>
-      <text x="52" y="158" fill="#7d9fc4" font-family="ui-monospace, monospace" font-size="10" letter-spacing="1">04</text>
-      <text x="80" y="158" fill="#f1ece1" font-family="ui-monospace, monospace" font-size="13" letter-spacing="0.5">of debugging tooling I wish existed when I</text>
-    </g>
-  <g>
-      <text x="52" y="180" fill="#7d9fc4" font-family="ui-monospace, monospace" font-size="10" letter-spacing="1">05</text>
-      <text x="80" y="180" fill="#f1ece1" font-family="ui-monospace, monospace" font-size="13" letter-spacing="0.5">started.</text>
-    </g>
-  </g>
-
-  <!-- PROPERTIES panel (role / org / loc / type) -->
-  <g>
-    <rect x="492" y="64" width="272" height="164" fill="none" stroke="#f1ece1" stroke-width="1" stroke-opacity="0.7"/>
-    <rect x="504" y="57" width="88" height="14" fill="#0e3a6e" stroke="#f1ece1" stroke-width="1" stroke-opacity="0.7"/>
-    <text x="548" y="67" text-anchor="middle" fill="#7d9fc4" font-family="ui-monospace, monospace" font-size="9" letter-spacing="1.4">PROPERTIES</text>
-    <g>
-      <text x="504" y="109.5" fill="#7d9fc4" font-family="ui-monospace, monospace" font-size="10" letter-spacing="1.4">ROLE</text>
-      <text x="576" y="109.5" fill="#f1ece1" font-family="ui-monospace, monospace" font-size="12" letter-spacing="1">AEX PLUGIN DEVELOPER</text>
-      <line x1="500" y1="123" x2="756" y2="123" stroke="#7d9fc4" stroke-width="0.5" stroke-opacity="0.4"/>
-      <line x1="568" y1="88" x2="568" y2="123" stroke="#7d9fc4" stroke-width="0.5" stroke-opacity="0.35"/>
-    </g>
-  <g>
-      <text x="504" y="144.5" fill="#7d9fc4" font-family="ui-monospace, monospace" font-size="10" letter-spacing="1.4">ORG</text>
-      <text x="576" y="144.5" fill="#f1ece1" font-family="ui-monospace, monospace" font-size="12" letter-spacing="1">—</text>
-      <line x1="500" y1="158" x2="756" y2="158" stroke="#7d9fc4" stroke-width="0.5" stroke-opacity="0.4"/>
-      <line x1="568" y1="123" x2="568" y2="158" stroke="#7d9fc4" stroke-width="0.5" stroke-opacity="0.35"/>
-    </g>
-  <g>
-      <text x="504" y="179.5" fill="#7d9fc4" font-family="ui-monospace, monospace" font-size="10" letter-spacing="1.4">LOC</text>
-      <text x="576" y="179.5" fill="#f1ece1" font-family="ui-monospace, monospace" font-size="12" letter-spacing="1">INDONESIA</text>
-      <line x1="500" y1="193" x2="756" y2="193" stroke="#7d9fc4" stroke-width="0.5" stroke-opacity="0.4"/>
-      <line x1="568" y1="158" x2="568" y2="193" stroke="#7d9fc4" stroke-width="0.5" stroke-opacity="0.35"/>
-    </g>
-  <g>
-      <text x="504" y="214.5" fill="#7d9fc4" font-family="ui-monospace, monospace" font-size="10" letter-spacing="1.4">TYPE</text>
-      <text x="576" y="214.5" fill="#f1ece1" font-family="ui-monospace, monospace" font-size="12" letter-spacing="1">PERSON</text>
-      
-      <line x1="568" y1="193" x2="568" y2="228" stroke="#7d9fc4" stroke-width="0.5" stroke-opacity="0.35"/>
-    </g>
-  </g>
-
-  <!-- Title block -->
-  <g>
-    <rect x="24" y="236" width="150" height="40" fill="none" stroke="#7d9fc4" stroke-width="1" stroke-opacity="0.55"/>
-    <text x="32" y="248" fill="#7d9fc4" font-family="ui-monospace, monospace" font-size="8" letter-spacing="1.2">DRAWN BY</text>
-    <text x="32" y="268" fill="#f1ece1" font-family="ui-monospace, monospace" font-size="11" letter-spacing="1">GE</text>
-  </g>
-  <g>
-    <rect x="174" y="236" width="150" height="40" fill="none" stroke="#7d9fc4" stroke-width="1" stroke-opacity="0.55"/>
-    <text x="182" y="248" fill="#7d9fc4" font-family="ui-monospace, monospace" font-size="8" letter-spacing="1.2">DATE</text>
-    <text x="182" y="268" fill="#f1ece1" font-family="ui-monospace, monospace" font-size="11" letter-spacing="1">26.10</text>
-  </g>
-  <g>
-    <rect x="324" y="236" width="150" height="40" fill="none" stroke="#7d9fc4" stroke-width="1" stroke-opacity="0.55"/>
-    <text x="332" y="248" fill="#7d9fc4" font-family="ui-monospace, monospace" font-size="8" letter-spacing="1.2">SCALE</text>
-    <text x="332" y="268" fill="#f1ece1" font-family="ui-monospace, monospace" font-size="11" letter-spacing="1">1:1</text>
-  </g>
-  <g>
-    <rect x="474" y="236" width="150" height="40" fill="none" stroke="#7d9fc4" stroke-width="1" stroke-opacity="0.55"/>
-    <text x="482" y="248" fill="#7d9fc4" font-family="ui-monospace, monospace" font-size="8" letter-spacing="1.2">REV</text>
-    <text x="482" y="268" fill="#f1ece1" font-family="ui-monospace, monospace" font-size="11" letter-spacing="1">1.0</text>
-  </g>
-  <g>
-    <rect x="624" y="236" width="152" height="40" fill="none" stroke="#7d9fc4" stroke-width="1" stroke-opacity="0.55"/>
-    <text x="632" y="248" fill="#7d9fc4" font-family="ui-monospace, monospace" font-size="8" letter-spacing="1.2">SHEET</text>
-    <text x="632" y="268" fill="#f1ece1" font-family="ui-monospace, monospace" font-size="11" letter-spacing="1">02 / 05</text>
-  </g>
+  <rect width="100%" height="100%" fill="url(#card-grad)" rx="14" ry="14"/>
+  <rect x="32" y="32" width="3" height="256" fill="#2cdd59" rx="1.5" class="accentbar"/>
+  <text class="heading" x="56" y="97" fill="#f7f7fb" font-family='"Inter", system-ui, sans-serif' font-size="32" font-weight="700">Hi, I&apos;m Genesfi.</text>
+  <text class="bio" x="56" y="147" fill="#a5a5b3" font-family='"Inter", system-ui, sans-serif' font-size="15" font-weight="400"><tspan x="56" dy="0">Hi! I&apos;m a music video editor &amp; animator creating vibrant visual worlds for</tspan><tspan x="56" dy="22">artists. Specializing in anime-style illustration, motion graphics, and lyric</tspan><tspan x="56" dy="22">video production. Building tools, scripts, and plugins for Adobe After Effects</tspan></text>
+  <g transform="translate(56 229.935)">
+        <g class="pill p0">
+          <rect width="207" height="20.130000000000003" rx="10.065000000000001" fill="#2cdd59" fill-opacity="0.12" stroke="#2cdd59" stroke-opacity="0.4"/>
+          <text x="103.5" y="10.065000000000001" fill="#f7f7fb" font-size="11" font-family="ui-monospace, monospace" text-anchor="middle" dominant-baseline="middle">Motion Designer &amp; Plugin Dev</text>
+        </g>
+      </g>
 </svg>
