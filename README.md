@@ -33,3 +33,5 @@ Portfolio: https://migi-portfolio.vercel.app
 ## 📊 GitHub Stats
 
 <img height="170" src="https://github-readme-stats.vercel.app/api?username=Genesfi&show_icons=true&theme=tokyonight"/>
+
+![snake](https://raw.githubusercontent.com/Platane/snk/output/github-contribution-grid-snake.svg)
