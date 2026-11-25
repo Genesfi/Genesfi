@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 850 118" width="850" height="118">
+  <defs>
+    <linearGradient id="curveG" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#a78bfa"/>
+      <stop offset="50%" stop-color="#38bdf8"/>
+      <stop offset="100%" stop-color="#f472b6"/>
+    </linearGradient>
+  </defs>
+  <rect width="850" height="118" rx="20" fill="#13141a" stroke="#262833" stroke-width="1.5"/>
+
+  <!-- Left: Motion Bezier Speed Graph -->
+  <text x="26" y="34" font-family="ui-monospace, monospace" font-size="11" font-weight="600" fill="#6e7489">
+    SPEED GRAPH · EASE IN-OUT
+  </text>
+  <path d="M26 92 C 120 92, 140 44, 240 44 C 340 44, 360 92, 460 92" fill="none" stroke="#262833" stroke-width="2"/>
+  <path d="M26 92 C 120 92, 140 44, 240 44 C 340 44, 360 92, 460 92" fill="none" stroke="url(#curveG)" stroke-width="3" stroke-linecap="round" stroke-dasharray="520" stroke-dashoffset="0">
+    <animate attributeName="stroke-dashoffset" values="520;0;520" dur="5s" repeatCount="indefinite"/>
+  </path>
+  <circle cx="240" cy="44" r="4.5" fill="#38bdf8"/>
+
+  <!-- Right: Explore Repositories CTA -->
+  <rect x="596" y="33" width="228" height="52" rx="16" fill="#1a1c24" stroke="#2e3140" stroke-width="1.5"/>
+  <text x="710" y="64" text-anchor="middle" font-family="ui-sans-serif, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="14" font-weight="700" fill="#f4f4f8">
+    Explore Repositories ↗
+  </text>
+</svg>
