@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 210 42" width="210" height="42">
+  <rect width="210" height="42" rx="21" fill="#21232d" stroke="#2f3241" stroke-width="1.5"/>
+  <text x="105" y="25" text-anchor="middle" font-family="ui-sans-serif, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="13" font-weight="600" fill="#f3f4f8">
+    All repositories ↗
+  </text>
+</svg>

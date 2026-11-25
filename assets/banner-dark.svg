@@ -1,0 +1,68 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 850 240" width="850" height="240">
+  <defs>
+    <linearGradient id="sky" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#181523"/>
+      <stop offset="55%" stop-color="#251f38"/>
+      <stop offset="100%" stop-color="#342645"/>
+    </linearGradient>
+    <linearGradient id="glow" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#f5a97f" stop-opacity="0.35"/>
+      <stop offset="100%" stop-color="#c6a0f6" stop-opacity="0"/>
+    </linearGradient>
+    <clipPath id="clip">
+      <rect width="850" height="240" rx="18"/>
+    </clipPath>
+  </defs>
+
+  <g clip-path="url(#clip)">
+    <rect width="850" height="240" fill="url(#sky)"/>
+    <circle cx="690" cy="70" r="85" fill="url(#glow)"/>
+
+    <!-- Crescent Moon -->
+    <circle cx="690" cy="68" r="24" fill="#f5e0dc"/>
+    <circle cx="700" cy="61" r="21" fill="#28213c"/>
+
+    <!-- Twinkling Stars -->
+    <circle cx="110" cy="48" r="1.5" fill="#f5e0dc" opacity="0.8">
+      <animate attributeName="opacity" values="0.3;1;0.3" dur="3.2s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="230" cy="34" r="1.2" fill="#c6a0f6" opacity="0.7">
+      <animate attributeName="opacity" values="0.8;0.2;0.8" dur="4s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="420" cy="42" r="1.6" fill="#f5a97f" opacity="0.7">
+      <animate attributeName="opacity" values="0.2;0.9;0.2" dur="2.8s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="560" cy="56" r="1.3" fill="#f5e0dc" opacity="0.6">
+      <animate attributeName="opacity" values="0.7;0.2;0.7" dur="3.6s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="770" cy="44" r="1.5" fill="#c6a0f6" opacity="0.8">
+      <animate attributeName="opacity" values="0.3;1;0.3" dur="3s" repeatCount="indefinite"/>
+    </circle>
+
+    <!-- Distant Lo-fi Hills & Rooftops -->
+    <path d="M0,190 Q160,145 340,180 T700,165 T850,185 L850,240 L0,240 Z" fill="#1d192b"/>
+    <path d="M0,208 Q220,175 460,202 T850,195 L850,240 L0,240 Z" fill="#14111d"/>
+
+    <!-- Cozy Lit Windows -->
+    <rect x="640" y="168" width="44" height="52" rx="4" fill="#1f1a2e"/>
+    <rect x="648" y="176" width="11" height="14" rx="2" fill="#f5a97f" opacity="0.85"/>
+    <rect x="665" y="176" width="11" height="14" rx="2" fill="#f5a97f" opacity="0.55"/>
+    <rect x="720" y="178" width="34" height="44" rx="4" fill="#1f1a2e"/>
+    <rect x="728" y="186" width="9" height="11" rx="2" fill="#c6a0f6" opacity="0.7"/>
+
+    <!-- Typography -->
+    <text x="56" y="108" font-family="ui-sans-serif, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="38" font-weight="700" fill="#f4ede8" letter-spacing="-0.5">
+      hi, i'm genesfi
+    </text>
+    <text x="58" y="140" font-family="ui-sans-serif, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="16" fill="#b8b2c8">
+      cozy native apps · late-night playlists · open source
+    </text>
+
+    <!-- Subtle Pill -->
+    <rect x="56" y="162" width="176" height="28" rx="14" fill="#2a243d" stroke="#c6a0f6" stroke-opacity="0.35"/>
+    <circle cx="74" cy="176" r="4" fill="#a6da95"/>
+    <text x="86" y="180" font-family="ui-sans-serif, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="12" fill="#cad3f5">
+      listening &amp; building
+    </text>
+  </g>
+</svg>

@@ -1,0 +1,65 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 850 220" width="850" height="220">
+  <defs>
+    <radialGradient id="aura1L" cx="85%" cy="20%" r="55%">
+      <stop offset="0%" stop-color="#ff9e7d" stop-opacity="0.25"/>
+      <stop offset="100%" stop-color="#f7f5f8" stop-opacity="0"/>
+    </radialGradient>
+    <clipPath id="cardClipL"><rect width="850" height="220" rx="22"/></clipPath>
+    <clipPath id="avatarClipL"><rect x="642" y="34" width="152" height="152" rx="28"/></clipPath>
+  </defs>
+
+  <g clip-path="url(#cardClipL)">
+    <rect width="850" height="220" fill="#f7f5f8"/>
+    <rect width="850" height="220" fill="url(#aura1L)">
+      <animate attributeName="opacity" values="0.7;1;0.7" dur="5s" repeatCount="indefinite"/>
+    </rect>
+    <rect x="0.75" y="0.75" width="848.5" height="218.5" rx="21.5" fill="none" stroke="#e4e0ea" stroke-width="1.5"/>
+
+    <path d="M540 34l3 8 8 3-8 3-3 8-3-8-8-3 8-3z" fill="#d97757" opacity="0.55">
+      <animateTransform attributeName="transform" type="rotate" from="0 540 45" to="360 540 45" dur="14s" repeatCount="indefinite"/>
+    </path>
+
+    <text x="44" y="64" font-family="ui-sans-serif, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="16" font-weight="600" fill="#d97757">
+      Hi, I'm
+    </text>
+    <text x="42" y="114" font-family="ui-sans-serif, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="52" font-weight="800" fill="#1e1e2e" letter-spacing="-1.5">
+      Genesfi
+    </text>
+    <text x="44" y="144" font-family="ui-sans-serif, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="15" fill="#636578">
+      crafting native desktop apps &amp; cozy software
+    </text>
+    <rect x="348" y="131" width="2.5" height="16" rx="1" fill="#d97757">
+      <animate attributeName="opacity" values="1;0;1" dur="1s" repeatCount="indefinite"/>
+    </rect>
+
+    <rect x="44" y="164" width="112" height="28" rx="14" fill="#ffffff" stroke="#e4e0ea"/>
+    <circle cx="62" cy="178" r="4" fill="#d97757">
+      <animate attributeName="r" values="3.5;5;3.5" dur="2s" repeatCount="indefinite"/>
+    </circle>
+    <text x="74" y="182" font-family="ui-sans-serif, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="12" font-weight="600" fill="#323344">
+      Rustacean
+    </text>
+
+    <rect x="166" y="164" width="136" height="28" rx="14" fill="#ffffff" stroke="#e4e0ea"/>
+    <circle cx="184" cy="178" r="4" fill="#7c68ee"/>
+    <text x="196" y="182" font-family="ui-sans-serif, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="12" font-weight="600" fill="#323344">
+      ytm-rs contributor
+    </text>
+
+    <g>
+      <animateTransform attributeName="transform" type="translate" values="0,0;0,-4;0,0" dur="4s" repeatCount="indefinite"/>
+      <rect x="652" y="42" width="152" height="152" rx="28" fill="#ede8f2" stroke="#dfd8e8" transform="rotate(4 728 118)"/>
+      <g clip-path="url(#avatarClipL)">
+        <rect x="642" y="34" width="152" height="152" fill="#f0ebf5"/>
+        <circle cx="718" cy="110" r="68" fill="#e5ddf0"/>
+        <circle cx="718" cy="96" r="28" fill="#f5e0dc"/>
+        <path d="M674,174 C674,142 762,142 762,174" fill="#7c68ee"/>
+        <path d="M688,92 C688,66 748,66 748,92 C740,80 696,80 688,92 Z" fill="#2d293e"/>
+        <path d="M686,98 C686,74 750,74 750,98" fill="none" stroke="#d97757" stroke-width="5" stroke-linecap="round"/>
+        <rect x="680" y="92" width="10" height="20" rx="5" fill="#d97757"/>
+        <rect x="746" y="92" width="10" height="20" rx="5" fill="#d97757"/>
+      </g>
+      <rect x="642" y="34" width="152" height="152" rx="28" fill="none" stroke="#d97757" stroke-opacity="0.45" stroke-width="2"/>
+    </g>
+  </g>
+</svg>

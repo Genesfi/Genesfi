@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 850 240" width="850" height="240">
+  <defs>
+    <linearGradient id="skyLight" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fdf6f0"/>
+      <stop offset="55%" stop-color="#fbe9df"/>
+      <stop offset="100%" stop-color="#f3dff2"/>
+    </linearGradient>
+    <clipPath id="clipLight">
+      <rect width="850" height="240" rx="18"/>
+    </clipPath>
+  </defs>
+
+  <g clip-path="url(#clipLight)">
+    <rect width="850" height="240" fill="url(#skyLight)"/>
+
+    <!-- Warm Sun -->
+    <circle cx="695" cy="72" r="28" fill="#f5a97f" opacity="0.85"/>
+    <circle cx="695" cy="72" r="44" fill="#f5a97f" opacity="0.18"/>
+
+    <!-- Soft Clouds -->
+    <rect x="520" y="54" width="84" height="22" rx="11" fill="#ffffff" opacity="0.75"/>
+    <rect x="540" y="44" width="46" height="20" rx="10" fill="#ffffff" opacity="0.85"/>
+    <rect x="740" y="96" width="66" height="18" rx="9" fill="#ffffff" opacity="0.65"/>
+
+    <!-- Soft Pastel Hills -->
+    <path d="M0,192 Q170,148 360,182 T710,166 T850,185 L850,240 L0,240 Z" fill="#ebd9e8"/>
+    <path d="M0,210 Q230,178 480,204 T850,196 L850,240 L0,240 Z" fill="#dcc6dd"/>
+
+    <!-- Typography -->
+    <text x="56" y="108" font-family="ui-sans-serif, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="38" font-weight="700" fill="#3a3347" letter-spacing="-0.5">
+      hi, i'm genesfi
+    </text>
+    <text x="58" y="140" font-family="ui-sans-serif, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="16" fill="#6b617d">
+      cozy native apps · afternoon playlists · open source
+    </text>
+
+    <!-- Subtle Pill -->
+    <rect x="56" y="162" width="176" height="28" rx="14" fill="#ffffff" stroke="#d97757" stroke-opacity="0.35"/>
+    <circle cx="74" cy="176" r="4" fill="#40a02b"/>
+    <text x="86" y="180" font-family="ui-sans-serif, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="12" fill="#4c4f69">
+      listening &amp; building
+    </text>
+  </g>
+</svg>
