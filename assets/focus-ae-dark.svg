@@ -1,13 +1,21 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 272 118" width="272" height="118">
-  <rect width="272" height="118" rx="18" fill="#13141a" stroke="#262833" stroke-width="1.5"/>
-  <rect x="18" y="18" width="32" height="32" rx="10" fill="#1f1c2e"/>
-  <polygon points="34,26 42,34 34,42 26,34" fill="#a78bfa">
-    <animateTransform attributeName="transform" type="rotate" from="0 34 34" to="90 34 34" dur="4s" repeatCount="indefinite"/>
-  </polygon>
-  <text x="18" y="74" font-family="ui-sans-serif, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="16" font-weight="700" fill="#f4f4f8">
-    After Effects
-  </text>
-  <text x="18" y="95" font-family="ui-sans-serif, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="12" fill="#9ea4b8">
-    Tools, scripts &amp; plugins
-  </text>
+  <defs><clipPath id="fae"><rect width="272" height="118" rx="18"/></clipPath></defs>
+  <g clip-path="url(#fae)">
+    <rect width="272" height="118" fill="#13141a"/>
+    <g opacity="0.12">
+      <animateTransform attributeName="transform" type="rotate" from="0 248 94" to="360 248 94" dur="18s" repeatCount="indefinite"/>
+      <polygon points="248,66 276,94 248,122 220,94" fill="#a78bfa"/>
+    </g>
+    <rect x="0.75" y="0.75" width="270.5" height="116.5" rx="17.5" fill="none" stroke="#262833" stroke-width="1.5"/>
+    <rect x="18" y="18" width="32" height="32" rx="10" fill="#1f1c2e"/>
+    <polygon points="34,26 42,34 34,42 26,34" fill="#a78bfa">
+      <animateTransform attributeName="transform" type="rotate" from="0 34 34" to="90 34 34" dur="4s" repeatCount="indefinite"/>
+    </polygon>
+    <text x="18" y="74" font-family="ui-sans-serif, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="16" font-weight="700" fill="#f4f4f8">
+      After Effects
+    </text>
+    <text x="18" y="95" font-family="ui-sans-serif, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="12" fill="#9ea4b8">
+      Tools, scripts &amp; plugins
+    </text>
+  </g>
 </svg>
