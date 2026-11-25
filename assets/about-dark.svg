@@ -1,22 +1,20 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 490 142" width="490" height="142">
   <rect width="490" height="142" rx="20" fill="#16171d" stroke="#282a36" stroke-width="1.5"/>
-  <!-- Header -->
   <circle cx="32" cy="32" r="12" fill="#252236"/>
   <path d="M32 37.5l-4.2-3.9a2.8 2.8 0 0 1 4-4l.2.2.2-.2a2.8 2.8 0 0 1 4 4L32 37.5z" fill="#b4a7ff"/>
   <text x="52" y="37" font-family="ui-sans-serif, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="16" font-weight="700" fill="#f3f4f8">
     About me
   </text>
 
-  <!-- Nested Pill Rows -->
   <rect x="20" y="56" width="450" height="32" rx="16" fill="#21232d"/>
   <circle cx="38" cy="72" r="5" fill="#ff9e7d"/>
   <text x="52" y="76" font-family="ui-sans-serif, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="13" fill="#d8dce8">
-    Building fast, native Windows &amp; Rust desktop apps
+    Building tools, scripts &amp; plugins for Adobe After Effects
   </text>
 
   <rect x="20" y="96" width="450" height="32" rx="16" fill="#21232d"/>
   <circle cx="38" cy="112" r="5" fill="#b4a7ff"/>
   <text x="52" y="116" font-family="ui-sans-serif, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="13" fill="#d8dce8">
-    UI polish, clean layouts &amp; late-night music
+    Native Rust desktop apps · South Kalimantan
   </text>
 </svg>
